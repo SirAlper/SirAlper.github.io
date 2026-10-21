@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'sha256-Fo7mXQ2aoVbg2xZQ/1V31jo4iFUqvGhM+zaeYAQC4xI='; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alper Han · Bilgisayar Mühendisliği Öğrencisi</title>
+    <meta name="description" content="Alper Han — Sistem programlama ve derin öğrenme üzerine çalışıyorum; yüksek performanslı yazılımlar geliştiriyorum." />
+    <meta name="theme-color" content="#ebe6da" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://siralper.github.io/" />
+    <link rel="alternate" hreflang="tr" href="https://siralper.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://siralper.github.io/?lang=en" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SirAlper" />
+    <meta property="og:title" content="Alper Han · Bilgisayar Mühendisliği Öğrencisi" />
+    <meta property="og:description" content="Alper Han — Sistem programlama ve derin öğrenme üzerine çalışıyorum; yüksek performanslı yazılımlar geliştiriyorum." />
+    <meta property="og:url" content="https://siralper.github.io/" />
+    <meta property="og:image" content="https://siralper.github.io/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="/fonts/instrumentsans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/dmmono-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- JS kapalıysa 3D arayüzü gizle, sayfayı kaydırılabilir yap; liste stilleri app.css içinde -->
+    <noscript><style>#app{display:none!important}html body{height:auto;overflow:auto}</style></noscript>
+    <script type="module" crossorigin src="/assets/main-CqhAQ6eN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-WttDMjit.css">
+  </head>
+  <body>
+    <div id="app" class="app is-loading">
+      <canvas class="stage" aria-hidden="true"></canvas>
+
+      <header class="hud-header">
+        <div class="identity">
+          <h1 class="identity__name"><a href="/" data-name></a></h1>
+          <p class="identity__role" data-role></p>
+        </div>
+        <p class="identity__about" data-about></p>
+        <nav class="hud-actions">
+          <button class="btn" type="button" data-lang-toggle></button>
+          <!-- Fareyle ortadaki 3B kâğıda tıklanır; bu link klavye ve ekran okuyucu için, odaklanınca görünür -->
+          <a class="btn btn--peek" data-quick-view></a>
+          <button class="btn" type="button" data-contact-open></button>
+          <button class="btn btn--solid" type="button" data-directory-open aria-haspopup="dialog"></button>
+        </nav>
+      </header>
+
+      <div class="hud-bottom">
+        <p class="drag-hint" data-drag-hint aria-hidden="true">
+          <span class="drag-hint__track"><span class="drag-hint__dot"></span></span>
+          <span data-drag-hint-label></span>
+        </p>
+        <nav class="rail" data-rail>
+          <button class="rail__step" type="button" data-step="-1">←</button>
+          <ol class="rail__list"></ol>
+          <button class="rail__step" type="button" data-step="1">→</button>
+        </nav>
+        <footer class="hud-footer" data-footer></footer>
+      </div>
+
+      <aside class="panel" data-panel aria-labelledby="panel-title" hidden></aside>
+
+      <dialog class="directory" data-directory aria-labelledby="directory-title"></dialog>
+
+      <div class="tooltip" data-tooltip aria-hidden="true"></div>
+      <p class="loader" data-loader role="status"></p>
+      <div class="fallback" data-fallback hidden></div>
+    </div>
+
+    <noscript>
+      
+  <div class="qv">
+    <header class="qv__header">
+      <nav class="qv__nav" aria-label="Hızlı görünüm">
+        <a href="/">← 3B deneyim</a>
+        <a href="/en/cv" lang="en" hreflang="en">English</a>
+      </nav>
+      <h1 class="qv__name">Alper Han</h1>
+      <p class="qv__role">Bilgisayar Mühendisliği Öğrencisi — Atatürk Üniversitesi</p>
+      <p class="qv__about">Sistem programlama ve derin öğrenme üzerine çalışıyorum; yüksek performanslı yazılımlar geliştiriyorum.</p>
+    </header>
+
+    <section class="qv__section" aria-labelledby="qv-projects">
+      <h2 class="qv__label" id="qv-projects"><span>01</span> Projeler</h2>
+      <ol class="qv__list">
+        <li class="qv__row">
+          <strong class="qv__title">AtaRehber</strong>
+          <span class="qv__meta"><span lang="en">Python · FastAPI · LangGraph · Ollama · React · TypeScript</span></span>
+          <span class="qv__meta qv__status"></span>
+          <p class="qv__summary"><span class="qv__tag">OpenLocalRagAgents · MIT</span> Yerel çoklu ajan RAG platformu, açık kaynak (MIT)</p>
+          <p class="qv__links"><a href="https://github.com/SirAlper/AtaRehber" target="_blank" rel="noreferrer" lang="en">AtaRehber ↗</a><a href="https://github.com/SirAlper/OpenLocalRagAgents" target="_blank" rel="noreferrer" lang="en">OpenLocalRagAgents ↗</a></p>
+        </li>
+        <li class="qv__row">
+          <strong class="qv__title">ONNX çıkarım motoru</strong>
+          <span class="qv__meta"><span lang="en">C++20 · CMake · Protobuf · GoogleTest</span></span>
+          <span class="qv__meta qv__status"><span class="status">Devam ediyor</span></span>
+          <p class="qv__summary">C++ ile sıfırdan yazılan inference engine</p>
+          <p class="qv__links"><a href="https://github.com/SirAlper/inference-engine" target="_blank" rel="noreferrer" lang="en">GitHub ↗</a></p>
+        </li>
+        <li class="qv__row">
+          <strong class="qv__title">Satranç oyunu + yapay zekâ</strong>
+          <span class="qv__meta"><span lang="en">C++ · OpenGL · GLFW · CMake · Python · PyTorch · ONNX</span></span>
+          <span class="qv__meta qv__status"><span class="status">Devam ediyor</span></span>
+          <p class="qv__summary">Satranç oyunu ve onu oynayan motor</p>
+          <p class="qv__links"><span class="muted">Herkese açık bağlantı yok</span></p>
+        </li>
+        <li class="qv__row">
+          <strong class="qv__title">Keşif ajanı</strong>
+          <span class="qv__meta"><span lang="en">Unity · ML-Agents · C# · Python</span></span>
+          <span class="qv__meta qv__status"><span class="status">Devam ediyor</span></span>
+          <p class="qv__summary"><span class="qv__tag">TÜBİTAK 2209-A</span> Deprem enkazı simülasyonunda merak tabanlı keşif</p>
+          <p class="qv__links"><span class="muted">Herkese açık bağlantı yok</span></p>
+        </li>
+        <li class="qv__row">
+          <strong class="qv__title">İHA yer kontrol arayüzü</strong>
+          <span class="qv__meta"><span lang="en">C# · WPF · MVVM · WebView2 · Leaflet.js · LibVLCSharp</span></span>
+          <span class="qv__meta qv__status"></span>
+          <p class="qv__summary"><span class="qv__tag">TEKNOFEST</span> TEKNOFEST takımında telemetri / görev kontrol UI</p>
+          <p class="qv__links"><a href="https://github.com/SirAlper/EtukenControlStation" target="_blank" rel="noreferrer" lang="en">GitHub ↗</a></p>
+        </li>
+        <li class="qv__row">
+          <strong class="qv__title">Ses ile arıza teşhisi</strong>
+          <span class="qv__meta"><span lang="en">Python · PyTorch · librosa · Arduino</span></span>
+          <span class="qv__meta qv__status"></span>
+          <p class="qv__summary"><span class="qv__tag">Sonus · Hackathon</span> Hackathon projesi, 28 takım arasında 4.</p>
+          <p class="qv__links"><a href="https://github.com/SirAlper/Sonus" target="_blank" rel="noreferrer" lang="en">GitHub ↗</a></p>
+        </li></ol>
+    </section>
+
+    <section class="qv__section" aria-labelledby="qv-about">
+      <h2 class="qv__label" id="qv-about"><span>02</span> Hakkında</h2>
+      <dl class="qv__facts">
+        <dt>İlgi alanları</dt><dd>Makine öğrenmesi · Oyun geliştirme · Sistem programlama (C++) · Grafik</dd>
+        <dt>Diğer</dt><dd>Google Oyun ve Uygulama Akademisi mezunu<br />Riot Games Türkiye Kampüs Elçisi</dd>
+      </dl>
+    </section>
+
+    <footer class="qv__footer">
+      <span class="qv__label"><span>03</span> Bağlantılar</span>
+      <p class="qv__links qv__links--big"><a href="https://github.com/SirAlper" target="_blank" rel="noreferrer" lang="en">GitHub ↗</a><a href="https://www.linkedin.com/in/alper-han-4a1a1bb9/" target="_blank" rel="noreferrer" lang="en">LinkedIn ↗</a><a href="mailto:hanalperhan@gmail.com" lang="en">E-mail ↗</a></p>
+    </footer>
+  </div>
+    </noscript>
+  </body>
+</html>
